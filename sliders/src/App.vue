@@ -1,5 +1,7 @@
 <template>
   <div>
+    <div id="navslidertoggle" @click="navSliderToggle=true">Slide</div>
+    <NavigationSlider :navSliderToggle= "navSliderToggle" @navSliderToggle="navSliderToggle = $event"/>
     <Navigation1 />
     <Header />
     <div>
@@ -10,15 +12,17 @@
 
 <script>
 
+import NavigationSlider from './components/navigationslider';
 import Navigation1 from './components/navigation1';
 import Header from './components/Header.vue';
 export default {
   components:{
-    Header,Navigation1
+    Header,Navigation1,NavigationSlider
   },
   data () {
     return {
-      msg: ''
+      msg: '',
+      navSliderToggle : false 
     }
   }
 }
@@ -40,5 +44,17 @@ body{
 *::before,
 *::after{
   box-sizing: inherit;
+}
+
+#navslidertoggle{
+  position: fixed;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: brown;
+  font-weight: bold;
+  line-height: 5rem;
+  text-align: center;
+  cursor: pointer;
 }
 </style>
