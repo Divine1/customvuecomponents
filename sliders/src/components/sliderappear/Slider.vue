@@ -104,7 +104,7 @@ export default {
         border-style: solid;
         border-color: transparent;
         transform: translateY(-50%);
-        z-index: 10;
+        z-index: 5;
     }
     #arrow-left{
         border-width: 30px 30px 30px 30px;
