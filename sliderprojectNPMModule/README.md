@@ -2,11 +2,6 @@
 
 > A Vue.js project
 
-## Update - 2018-07-13
-
-
-i have made this project to be more generic.
-
 ## Below are the notable details
 
 ### Note 1:
