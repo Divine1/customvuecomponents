@@ -41,7 +41,7 @@ i have provided scss variables, so that you can make changes to font-size,backgr
 i have made size calculation based on pixels, you can see it in the scss variables. 
 If you need it change it to rem or em, you can just make changes in the scss variables, i have tried to make the code to adapt to changes in sizes. if you face any issue while making these changes , let me know.
 
-Below is the npm command to install scss compiler into vuejs
+Below is the npm command to install scss compiler into vuejs. You don't have to run this command to make this package to work because (as i already mentioned above) i have already included entry of these packages in the `package.json`
 ```
     npm install sass-loader node-sass style-loader --save
 ```
